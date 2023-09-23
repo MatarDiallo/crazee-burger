@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
 
-export default function LoginPage() {
-   const [inputValue, setInputValue] = useState("Matar")
+import React, { useState } from 'react'
+export default function LoginForm() {
+    const [inputValue, setInputValue] = useState("Matar")
 
     const handleSubmit =(event) => {
         event.preventDefault()
@@ -15,7 +15,7 @@ setInputValue("")
      }
   return (
     <div>
-    <h1>Bienvenue chez nous!</h1>
+        <h1>Bienvenue chez nous!</h1>
     <br></br>
     <h2>Connectez-vous</h2>
     <form action='submit' onSubmit={handleSubmit}>
