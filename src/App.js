@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
 
-function App() {
+ function App() {
+const [count, setCount] = useState(1)
+const handleClick=()=>{
+  
+alert('Bonjour ')
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Salut Matar !
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Bienvenue chez nous!</h1>
+      <p>Connectez-vous</p>
+     <input placeholder='Entrez votre prénom' name='Nom' required></input> <button onClick={handleClick} >Accédez à votre espace</button>
+
     </div>
-  );
+  )
 }
 
 export default App;
