@@ -5,7 +5,7 @@ export default function LoginForm() {
 
     const handleSubmit =(event) => {
         event.preventDefault()
-alert(`Bonjour ${inputValue}`)
+
 setInputValue("")
 
     }
