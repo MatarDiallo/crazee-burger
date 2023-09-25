@@ -1,11 +1,12 @@
 import React from 'react'
-import Deconnexion from '../login/Deconnexion'
+import { Link } from 'react-router-dom'
+
 
 export default function OrderPage() {
   return (
     <div>
-        <h1>Bonjour Bob</h1>npm i react-router
-      <Deconnexion></Deconnexion>
+        <h1>Bonjour Bob</h1>
+      <Link to="/">  <button>Déconnexion</button></Link> 
     </div>
   )
 }
